@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <context-param>
+        <param-name>reg_pagina</param-name>
+     <param-value>4</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>dirUploadEmail</param-name>
+        <param-value>/temp_email</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>dir_user_registrados</param-name>
+        <param-value>/dir_users</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>dirdownloadFile</param-name>
+        <param-value>/temp_descargas</param-value>
+    </context-param>
+    
+     <context-param>
+        <param-name>maxFileSize</param-name>
+        <param-value>307200</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>conectorjdbc</param-name>
+        <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>  
+    
+    <!-- Local 
+    <context-param>
+        <param-name>loginjdbc</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>passwordjdbc</param-name>
+        <param-value></param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>urljdbc</param-name>
+        <param-value>jdbc:mysql://localhost:3306/bolsatrabajo_juanfra_juanma</param-value>
+    </context-param>
+    -->
+    <!-- Remoto -->
+    <context-param>
+        <param-name>loginjdbc</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <param-name>passjdbc</param-name>
+        <param-value></param-value>
+    </context-param>
+    <context-param>
+        <param-name>urljdbc</param-name>
+        <param-value>jdbc:mysql://35.180.41.53:3306/bolsatrabajo_juanfra_juanma</param-value>
+    </context-param>
+   
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+	<welcome-file>
+            index.jsp
+        </welcome-file>
+    </welcome-file-list>
+</web-app>
